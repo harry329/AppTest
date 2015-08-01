@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="119dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="24dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textColorHint="#000000"
+            android:hint="@string/Username" />
+
+    
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="@string/Password"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+	</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="onLogin"
+        android:layout_marginBottom="72dp"
+        android:src="@drawable/btn_login" />
+
+</RelativeLayout>
